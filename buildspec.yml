@@ -10,7 +10,6 @@ phases:
   build:
     commands:
       - echo "Starting build `date` in `pwd`"
-      - aws s3 cp s3://rajadevops/awslogo.jpg awslogo.jpg  
       - zip webapp.zip *
   post_build:
     commands:
